@@ -44,8 +44,8 @@ def main(source, destination):
             if 4 < w and 4 < h:
               g.write('person %d %d %d %d\n' % (x, y, w, h))
 
-if __name__ == "__main__":
-  if 2 < len(sys.argv):
-    main(sys.argv[1],sys.argv[2])
-  else:
-    print("usage: python3 source/folder/path/ destination/folder/path/\n")
+  if __name__ == "__main__":
+    if 2 < len(sys.argv):
+      main(sys.argv[1],sys.argv[2])
+    else:
+      print("usage: python3 source/folder/path/ destination/folder/path/\n")
