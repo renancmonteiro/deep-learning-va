@@ -1,0 +1,7 @@
+Car 540 164 70 210
+Car 439 163 52 211
+Car 326 154 68 220
+Car 269 169 29 205
+Car 196 174 43 200
+greetrafficlight 479 149 5 225
+greetrafficlight 424 112 6 262

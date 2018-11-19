@@ -1,0 +1,6 @@
+pedestrian 842 152 53 222
+cyclist 376 155 108 219
+car 585 156 32 218
+pedestrian 730 150 26 224
+cyclist 216 148 166 226
+van 639 127 52 247

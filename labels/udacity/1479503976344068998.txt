@@ -1,0 +1,15 @@
+Car 500 131 349 243
+Car 1061 85 208 289
+Car 0 180 85 194
+Car 139 168 92 206
+Car 441 155 72 219
+Car 523 159 33 215
+Truck 759 88 115 286
+Car 203 162 60 212
+Car 237 161 45 213
+Car 253 161 47 214
+redtrafficlight 558 90 5 284
+redtrafficlight 611 91 6 283
+redtrafficlight 720 127 6 247
+redtrafficlight 731 109 9 265
+offtrafficlight 349 120 9 254

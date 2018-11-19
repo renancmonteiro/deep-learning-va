@@ -1,0 +1,6 @@
+person 856 97 8 277
+person 858 74 28 300
+traffic_light 686 -55 9 430
+car 164 109 90 265
+bicycle 854 112 34 262
+car 698 87 24 287

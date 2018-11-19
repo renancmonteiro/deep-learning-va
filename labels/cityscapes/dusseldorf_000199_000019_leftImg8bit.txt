@@ -1,0 +1,9 @@
+redtrafficlight 857 53 16 321
+redtrafficlight 797 30 19 344
+redtrafficlight 621 -121 24 496
+redtrafficlight 390 14 22 360
+person 419 121 14 253
+person 522 118 11 256
+person 902 112 11 262
+person 888 117 15 257
+person 763 121 9 253

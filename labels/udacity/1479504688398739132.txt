@@ -1,0 +1,13 @@
+Car 237 0 584 375
+Pedestrian 1078 105 71 269
+Pedestrian 1152 85 86 289
+Pedestrian 1150 98 51 276
+Pedestrian 1012 143 35 231
+Pedestrian 883 149 29 225
+Pedestrian 20 143 35 231
+Pedestrian 164 152 20 222
+Pedestrian 182 152 20 222
+Pedestrian 71 146 29 228
+Pedestrian 128 154 24 220
+Pedestrian 844 143 23 231
+Pedestrian 862 140 24 234

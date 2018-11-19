@@ -1,0 +1,2 @@
+pedestrian 971 152 117 222
+pedestrian 857 181 83 193

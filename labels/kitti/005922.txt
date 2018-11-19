@@ -1,0 +1,10 @@
+redtrafficlight 427 132 8 242
+redtrafficlight 604 131 12 243
+greetrafficlight 693 137 8 237
+greetrafficlight 1022 121 14 253
+redtrafficlight 652 149 5 225
+car 36 183 141 191
+car 282 174 87 200
+car 226 180 86 194
+car 441 172 78 202
+car 911 168 65 206

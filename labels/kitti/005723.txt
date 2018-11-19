@@ -1,0 +1,7 @@
+redtrafficlight 983 110 13 264
+offtrafficlight 1003 98 20 276
+offtrafficlight 660 141 12 233
+offtrafficlight 406 141 11 233
+car 744 170 265 204
+car 569 183 27 191
+car 474 186 34 188

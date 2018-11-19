@@ -1,0 +1,13 @@
+person 35 110 24 264
+person 81 110 13 264
+person 67 110 16 264
+person 55 110 20 264
+person 83 114 23 260
+person 104 110 23 264
+person 177 113 6 261
+person 203 114 7 260
+person 213 114 6 260
+person 223 116 5 258
+person 472 107 8 267
+person 650 79 59 295
+person 588 113 19 261

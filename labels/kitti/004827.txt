@@ -1,0 +1,3 @@
+pedestrian 939 157 47 217
+pedestrian 800 169 15 205
+pedestrian 789 162 18 212

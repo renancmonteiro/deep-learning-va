@@ -1,0 +1,14 @@
+Car 380 69 463 305
+Car 988 130 282 244
+Car 28 145 182 229
+Car 239 166 71 208
+Car 308 168 39 206
+Car 355 157 60 217
+Car 1209 258 62 116
+Car 1181 133 89 241
+Pedestrian 0 168 23 206
+Car 331 164 40 210
+redtrafficlight 836 94 15 280
+redtrafficlight 616 0 14 35
+yellowtrafficlight 490 4 15 370
+yellowtrafficlight 69 79 16 295

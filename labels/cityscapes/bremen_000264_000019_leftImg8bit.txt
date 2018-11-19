@@ -1,0 +1,5 @@
+redtrafficlight 583 71 14 303
+redtrafficlight 742 -36 14 411
+person 238 119 19 255
+person 558 131 6 243
+person 550 133 5 241

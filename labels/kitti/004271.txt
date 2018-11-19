@@ -1,0 +1,5 @@
+tram 688 84 385 290
+pedestrian 613 149 107 225
+pedestrian 365 176 91 198
+pedestrian 1002 178 112 196
+car 995 144 271 230

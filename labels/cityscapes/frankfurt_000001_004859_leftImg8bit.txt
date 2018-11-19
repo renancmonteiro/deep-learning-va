@@ -1,0 +1,7 @@
+person 40 79 10 295
+person 26 79 16 295
+person 266 90 8 284
+person 311 91 8 283
+person 444 83 24 291
+car 506 93 40 281
+motorbike 440 112 31 262

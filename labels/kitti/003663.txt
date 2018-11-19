@@ -1,0 +1,16 @@
+offtrafficlight 756 149 8 225
+offtrafficlight 1177 138 13 236
+offtrafficlight 776 153 7 221
+offtrafficlight 1034 108 15 266
+offtrafficlight 778 81 9 293
+offtrafficlight 1176 147 11 227
+car 0 218 176 156
+car 491 186 40 188
+van 421 178 50 196
+car 323 200 86 174
+car 238 205 92 169
+cyclist 129 193 81 181
+pedestrian 467 192 9 182
+car 1178 152 92 222
+car 257 200 70 174
+car 960 172 39 202

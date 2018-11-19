@@ -1,0 +1,9 @@
+greetrafficlight 608 74 16 300
+person 363 128 6 246
+person 474 133 7 241
+person 499 110 16 264
+person 1201 92 51 282
+person 853 128 12 246
+person 861 129 17 245
+person 760 126 6 248
+person 742 132 7 242

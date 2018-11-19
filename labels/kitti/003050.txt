@@ -1,0 +1,6 @@
+car 929 144 139 230
+car 531 173 37 201
+cyclist 653 168 29 206
+cyclist 596 167 28 207
+pedestrian 580 170 14 204
+pedestrian 460 174 15 200

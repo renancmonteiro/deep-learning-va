@@ -1,0 +1,6 @@
+person 840 51 44 323
+person 28 74 22 300
+person 60 61 22 313
+bicycle 111 91 53 283
+bicycle 43 96 52 278
+motorbike 1 91 23 283

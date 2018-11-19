@@ -1,0 +1,12 @@
+pedestrian 1179 74 87 300
+person_sitting 142 236 184 138
+pedestrian 472 154 44 220
+pedestrian 407 161 67 213
+pedestrian 649 154 30 220
+pedestrian 636 154 30 220
+pedestrian 700 157 22 217
+pedestrian 744 151 23 223
+pedestrian 758 150 15 224
+car 576 166 35 208
+pedestrian 394 162 33 212
+pedestrian 726 159 24 215

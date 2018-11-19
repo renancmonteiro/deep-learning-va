@@ -1,0 +1,9 @@
+person 758 104 21 270
+person 777 128 22 246
+person 610 112 34 262
+person 824 148 19 226
+person 867 97 40 277
+bicycle 862 151 40 223
+bicycle 810 149 46 225
+bicycle 747 151 72 223
+bicycle 709 151 72 223

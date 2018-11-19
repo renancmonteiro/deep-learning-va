@@ -1,0 +1,3 @@
+pedestrian 813 163 23 211
+cyclist 706 163 19 211
+cyclist 693 168 8 206

@@ -1,0 +1,9 @@
+person 656 78 39 296
+person 713 66 8 308
+person 719 65 12 309
+person 490 73 14 301
+person 509 67 13 307
+car 338 74 96 300
+truck 242 40 92 334
+motorbike 457 75 30 299
+bicycle 518 71 34 303

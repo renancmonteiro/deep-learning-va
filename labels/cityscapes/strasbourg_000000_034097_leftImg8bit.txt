@@ -1,0 +1,12 @@
+person 706 68 9 306
+person 695 66 16 308
+person 724 65 15 309
+person 709 66 19 308
+person 363 32 56 342
+person 365 70 45 304
+person 450 47 24 327
+person 426 50 55 324
+person 861 66 47 308
+person 946 47 51 327
+bicycle 786 84 20 290
+bicycle 683 78 50 296

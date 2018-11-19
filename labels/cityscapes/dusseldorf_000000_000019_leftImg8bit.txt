@@ -1,0 +1,3 @@
+redtrafficlight 335 -130 49 505
+person 863 128 8 246
+person 1067 124 11 250

@@ -1,0 +1,3 @@
+pedestrian 891 154 41 220
+cyclist 714 160 24 214
+cyclist 695 168 10 206

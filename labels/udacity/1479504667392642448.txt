@@ -1,0 +1,9 @@
+Car 240 0 579 375
+Car 1207 132 63 242
+Truck 764 54 506 320
+Pedestrian 244 104 35 270
+Pedestrian 187 111 58 263
+Pedestrian 104 145 29 229
+Pedestrian 150 153 18 221
+Pedestrian 57 154 19 220
+Pedestrian 168 153 18 221

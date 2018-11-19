@@ -1,0 +1,6 @@
+redtrafficlight 385 84 9 290
+person 537 125 12 249
+person 548 125 9 249
+person 1173 86 38 288
+person 437 135 8 239
+person 593 119 16 255

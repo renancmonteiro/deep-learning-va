@@ -1,0 +1,10 @@
+person 653 102 5 272
+person 883 85 16 289
+person 960 66 16 308
+person 959 66 43 308
+person 986 60 59 314
+truck 0 0 232 239
+bicycle 975 127 68 247
+bicycle 962 127 24 247
+truck 701 90 24 284
+bus 208 0 145 186

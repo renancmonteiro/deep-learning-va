@@ -1,0 +1,16 @@
+person 533 53 27 321
+person 175 58 73 316
+person 258 44 65 330
+motorbike 326 84 62 290
+car 18 81 173 293
+car 0 99 18 275
+bicycle 630 53 15 321
+motorbike 655 59 18 315
+bicycle 708 53 27 321
+bicycle 748 56 12 318
+bicycle 763 53 12 321
+bicycle 773 53 24 321
+bicycle 673 53 15 321
+bicycle 689 53 12 321
+bicycle 574 47 31 327
+bicycle 608 47 15 327

@@ -1,0 +1,9 @@
+pedestrian 1143 144 89 230
+pedestrian 396 158 30 216
+pedestrian 290 160 55 214
+pedestrian 667 171 28 203
+pedestrian 531 166 19 208
+pedestrian 588 163 16 211
+pedestrian 647 163 16 211
+pedestrian 634 166 11 208
+van 745 49 294 325

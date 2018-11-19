@@ -1,0 +1,9 @@
+pedestrian 616 171 24 203
+tram 308 129 153 245
+tram 454 130 73 244
+tram 517 126 238 248
+person_sitting 1005 215 161 159
+person_sitting 942 204 81 170
+person_sitting 781 197 61 177
+person_sitting 819 196 64 178
+person_sitting 755 200 59 174

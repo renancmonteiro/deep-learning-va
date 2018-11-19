@@ -1,0 +1,3 @@
+Car 596 161 76 214
+Pedestrian 1126 75 58 299
+Pedestrian 1190 58 62 316

@@ -1,0 +1,3 @@
+pedestrian 1208 147 62 227
+pedestrian 844 170 22 204
+pedestrian 821 163 29 211

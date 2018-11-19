@@ -1,0 +1,16 @@
+offtrafficlight 297 31 23 343
+offtrafficlight 366 26 30 348
+offtrafficlight 465 67 8 307
+redtrafficlight 317 0 61 91
+offtrafficlight 612 141 12 233
+offtrafficlight 48 129 13 245
+offtrafficlight 194 139 8 235
+offtrafficlight 27 136 13 238
+offtrafficlight 329 144 8 230
+offtrafficlight 1070 131 15 243
+offtrafficlight 1044 144 13 230
+car 652 175 29 199
+truck 649 152 28 222
+car 713 174 40 200
+van 832 151 139 223
+car 818 173 67 201

@@ -1,0 +1,9 @@
+Pedestrian 45 160 21 214
+Pedestrian 68 161 19 214
+Pedestrian 123 161 24 214
+Pedestrian 416 170 19 204
+Car 0 162 58 212
+Car 109 183 113 191
+Car 588 113 180 261
+offtrafficlight 359 121 7 253
+offtrafficlight 721 106 15 268

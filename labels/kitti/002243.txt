@@ -1,0 +1,4 @@
+tram 948 92 318 282
+pedestrian 1213 166 53 208
+pedestrian 0 160 153 214
+car 800 180 270 194

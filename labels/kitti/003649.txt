@@ -1,0 +1,2 @@
+pedestrian 582 147 53 227
+truck 0 0 95 372

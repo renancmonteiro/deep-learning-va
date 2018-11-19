@@ -1,0 +1,2 @@
+pedestrian 900 155 77 219
+pedestrian 800 175 59 199

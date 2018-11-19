@@ -1,0 +1,7 @@
+Car 596 145 70 229
+Car 700 159 47 215
+Car 377 150 48 224
+Car 674 153 23 221
+greetrafficlight 708 91 7 283
+redtrafficlight 624 124 10 250
+redtrafficlight 604 123 13 251

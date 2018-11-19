@@ -1,0 +1,16 @@
+person 732 89 9 285
+person 88 87 9 287
+person 603 92 11 282
+person 614 89 9 285
+person 468 68 65 306
+person 352 83 6 291
+person 496 73 65 301
+person 816 41 90 333
+person 742 20 88 354
+person 1259 94 9 280
+person 956 89 8 285
+person 998 87 10 287
+person 929 87 10 287
+bicycle 226 130 40 244
+car 1139 81 114 293
+car 383 71 267 303

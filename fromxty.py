@@ -30,10 +30,10 @@ def crop_scale(x, y, w, h, imgW, imgH, nw = 1272, nh=375):
   return [int(x), int(y), int(w), int(h)]
 
 # convert from original Person cityscapes format to yolo format
-def fromcs(source, destination, g, imgW, imgH, nw = 1272, nh = 375):
+def fromcs(source, destination, imgW, imgH, nw = 1272, nh = 375):
   for filename in os.listdir(source):
     if filename.endswith('.json'):
-      with open(source + filename) as f, open(destination + filename.replace('.json', '.txt')) as g:
+      with open(source + filename) as f, open(destination + filename.replace('.json', '.txt'), 'w') as g:
         data = json.loads(f.read())
 
         if imgW != data.get('imgWidth'):
@@ -49,19 +49,21 @@ def fromcs(source, destination, g, imgW, imgH, nw = 1272, nh = 375):
               g.write('person %d %d %d %d\n' % (x, y, w, h))
 
 # convert from kitti to yolo format
-def fromk(source, destination, imgW, imgH, callback, _nw = 1272, _nh = 375):
+def fromk(source, destination, imgW, imgH, _nw = 1272, _nh = 375):
   for filename in os.listdir(source):
     if filename.endswith('.txt'):
-      with open(source + filename) as f, open(destination + filename) as g:
+      with open(source + filename) as f, open(destination + filename, 'w') as g:
         for l in f:
           ss = l.split(' ')
-          label = ss[0]
-          _x = int(ss[4])
-          _y = int(ss[5])
-          _w = int(ss[6]) - _x
-          _h = int(ss[7]) - _y
-          x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw = _nw, nh = _nh)
-          g.write(label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h) + '\n')
+          label = ss[0].lower()
+          if 'dontcare' != label:
+            _x = int(ss[4].split('.')[0])
+            _y = int(ss[5].split('.')[0])
+            _w = int(ss[6].split('.')[0]) - _x
+            _h = int(ss[7].split('.')[0]) - _y
+            x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw = _nw, nh = _nh)
+            if 4 < w and 4 < h:
+              g.write(label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h) + '\n')
 
 # convert from udacity to yolo format
 def fromu(source, destination, imgWidth, imgHeight, _nw = 1272, _nh = 375):
@@ -69,20 +71,22 @@ def fromu(source, destination, imgWidth, imgHeight, _nw = 1272, _nh = 375):
   with open(source + 'labels_crowdai.csv') as f:
     next(f)
     for l in f:
-      print(l)
       ss = l.replace('\n', '').split(',')
-      img = ss[5]
-      label = ss[0]
-      _x = int(ss[1])
-      _y = int(ss[2])
-      _w = int(ss[3]) - _x
-      _h = int(ss[4]) - _y
+      img = ss[4].lower()
+      label = ss[5].lower()
+      _x = int(ss[0])
+      _y = int(ss[1])
+      _w = int(ss[2]) - _x
+      _h = int(ss[3]) - _y
       x, y, w, h = crop_scale(_x, _y, _w, _h, imgWidth, imgHeight, nw = _nw, nh = _nh)
-      fstr = label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h)
-      if img in imgs:
-        imgs[img].append(fstr)
-      else:
-        imgs[img] = [fstr]
+      if 4 < w and 4 < h:
+        if 'pedestrian' == label:
+          label = 'person'
+        fstr = label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h)
+        if img in imgs:
+          imgs[img].append(fstr)
+        else:
+          imgs[img] = [fstr]
   for img in imgs:
     with open(destination + img.replace('.jpg', '.txt'), 'w') as g:
       for s in imgs[img]:

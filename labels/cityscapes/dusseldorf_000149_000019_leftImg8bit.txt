@@ -1,0 +1,8 @@
+greetrafficlight 747 27 13 347
+greetrafficlight 815 87 13 287
+person 811 120 8 254
+person 832 123 6 251
+person 857 126 6 248
+person 861 118 13 256
+person 875 120 14 254
+person 796 120 18 254

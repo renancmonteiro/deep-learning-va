@@ -1,0 +1,3 @@
+pedestrian 1051 153 66 221
+pedestrian 821 169 20 205
+pedestrian 800 163 23 211

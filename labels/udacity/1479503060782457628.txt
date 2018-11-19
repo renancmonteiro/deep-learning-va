@@ -1,0 +1,14 @@
+Car 477 162 143 212
+Pedestrian 959 146 45 228
+Pedestrian 997 160 37 214
+Pedestrian 1048 147 33 227
+Pedestrian 708 156 21 218
+Pedestrian 738 162 21 212
+Pedestrian 728 164 21 210
+Car 17 177 160 197
+Car 212 192 66 182
+Truck 350 155 108 219
+Truck 279 192 53 182
+greetrafficlight 406 61 16 313
+greetrafficlight 751 33 26 341
+offtrafficlight 1165 27 26 347

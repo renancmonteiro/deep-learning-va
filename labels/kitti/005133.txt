@@ -1,0 +1,11 @@
+offtrafficlight 240 83 35 291
+offtrafficlight 747 67 30 307
+offtrafficlight 558 139 5 235
+offtrafficlight 276 98 20 276
+car 613 174 27 200
+car 0 183 403 191
+cyclist 778 140 137 234
+pedestrian 781 158 33 216
+pedestrian 739 171 28 203
+pedestrian 231 175 34 199
+cyclist 756 149 101 225

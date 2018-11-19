@@ -1,0 +1,12 @@
+Car 348 0 490 375
+Car 90 153 104 221
+Car 1 164 92 210
+Car 1082 132 32 242
+Car 453 146 41 228
+Truck 796 72 104 302
+Car 915 141 24 233
+offtrafficlight 1246 0 20 55
+offtrafficlight 1202 -92 19 467
+greetrafficlight 857 0 19 7
+greetrafficlight 1028 0 31 61
+greetrafficlight 1087 55 19 320
