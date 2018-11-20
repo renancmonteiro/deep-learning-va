@@ -19,7 +19,7 @@ def cropscale_image(source_image, nw = 1242, nh = 375):
 def main(source, destination):
   for filename in os.listdir(source):
     if filename.endswith(".jpg") or filename.endswith(".png") or filename.endswith(".tiff"):
-      nimg = cropscale_image(source_image = filename, nw = 1242, nh = 375)
+      nimg = cropscale_image(source_image = source + filename, nw = 1242, nh = 375)
       nimg.save(destination + filename)
 
 if __name__ == "__main__":
