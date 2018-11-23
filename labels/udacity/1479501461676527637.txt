@@ -1,6 +1,0 @@
-Car 288 200 80 174
-Car 395 199 70 175
-Car 467 202 37 172
-redtrafficlight 455 9 24 365
-redtrafficlight 531 17 24 357
-redtrafficlight 661 111 17 263

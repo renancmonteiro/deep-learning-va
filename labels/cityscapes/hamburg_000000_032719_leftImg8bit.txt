@@ -1,7 +1,0 @@
-person 789 101 31 273
-person 263 109 29 265
-person 293 99 17 275
-person 993 55 49 319
-person 930 70 54 304
-car 6 68 326 306
-motorbike 701 115 105 259

@@ -1,5 +1,0 @@
-redtrafficlight 388 61 23 313
-redtrafficlight 417 83 18 291
-redtrafficlight 934 17 25 357
-redtrafficlight 876 56 19 318
-redtrafficlight 604 62 19 312

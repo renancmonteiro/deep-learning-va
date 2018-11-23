@@ -1,6 +1,0 @@
-person 574 91 6 283
-person 417 76 31 298
-person 321 43 82 331
-person 357 42 88 332
-person 851 75 47 299
-person 577 97 18 277

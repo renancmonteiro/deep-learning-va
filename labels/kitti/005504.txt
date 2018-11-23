@@ -1,4 +1,0 @@
-cyclist 639 157 31 217
-cyclist 414 161 56 213
-pedestrian 728 152 27 222
-car 750 162 198 212

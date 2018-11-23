@@ -1,5 +1,0 @@
-person 4 119 21 255
-person 26 125 22 249
-person 106 127 23 247
-person 85 124 24 250
-person 116 127 28 247

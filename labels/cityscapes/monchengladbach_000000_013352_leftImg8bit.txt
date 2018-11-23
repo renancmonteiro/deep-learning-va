@@ -1,7 +1,0 @@
-person 452 80 14 294
-person 497 83 19 291
-person 622 76 37 298
-person 670 66 41 308
-bicycle 360 103 59 271
-bicycle 518 96 46 278
-bicycle 413 99 49 275

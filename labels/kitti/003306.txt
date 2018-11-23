@@ -1,5 +1,0 @@
-van 0 57 246 317
-pedestrian 313 167 55 207
-pedestrian 830 153 29 221
-van 660 161 55 213
-person_sitting 741 157 46 217

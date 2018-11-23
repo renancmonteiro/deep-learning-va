@@ -1,2 +1,0 @@
-pedestrian 911 169 77 205
-pedestrian 75 139 96 235

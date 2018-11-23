@@ -1,8 +1,0 @@
-Car 588 115 178 259
-Car 49 186 136 188
-Pedestrian 404 170 18 204
-Pedestrian 0 159 18 215
-Pedestrian 76 166 24 208
-offtrafficlight 347 119 9 255
-offtrafficlight 721 104 12 270
-greetrafficlight 491 121 5 253

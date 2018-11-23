@@ -1,3 +1,0 @@
-pedestrian 348 176 24 198
-pedestrian 257 167 24 207
-misc 887 189 65 185

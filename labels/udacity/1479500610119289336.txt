@@ -1,7 +1,0 @@
-Car 406 166 60 208
-Pedestrian 640 155 29 219
-Pedestrian 3 178 27 196
-Pedestrian 21 174 39 200
-Car 26 162 74 212
-Car 0 158 72 216
-Car 932 144 41 230

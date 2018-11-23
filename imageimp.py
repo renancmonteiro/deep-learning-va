@@ -17,13 +17,18 @@ def cropscale_image(source_image, nw = 1242, nh = 375):
   return img
 
 def main(source, destination):
+  if not source.endswith('/'):
+    source += '/'
+  if not destination.endswith('/'):
+    destination += '/'
   for filename in os.listdir(source):
     if filename.endswith(".jpg") or filename.endswith(".png") or filename.endswith(".tiff"):
       nimg = cropscale_image(source_image = source + filename, nw = 1242, nh = 375)
       nimg.save(destination + filename)
+      nimg.close()
 
 if __name__ == "__main__":
   if 2 < len(sys.argv):
-    main(sys.argv[1],sys.argv[2])
+    main(sys.argv[1], sys.argv[2])
   else:
     print("usage: python3 source/folder/path/ destination/folder/path/\n")

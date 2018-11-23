@@ -1,6 +1,0 @@
-person 186 132 16 242
-person 888 103 28 271
-person 902 90 48 284
-person 827 85 63 289
-person 703 132 11 242
-person 691 128 16 246

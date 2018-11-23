@@ -1,5 +1,0 @@
-offtrafficlight 777 153 8 221
-redtrafficlight 550 142 7 232
-car 623 185 50 189
-van 686 173 51 201
-tram 558 166 71 208

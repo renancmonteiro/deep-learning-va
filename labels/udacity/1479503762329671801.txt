@@ -1,4 +1,0 @@
-Car 1022 150 86 224
-Pedestrian 947 144 21 230
-Pedestrian 922 139 25 235
-Pedestrian 991 142 25 232

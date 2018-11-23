@@ -1,4 +1,0 @@
-person 816 92 36 282
-person 917 97 33 277
-bicycle 897 130 59 244
-bicycle 801 130 55 244

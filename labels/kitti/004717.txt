@@ -1,5 +1,0 @@
-truck 0 0 287 375
-car 689 180 168 194
-pedestrian 663 163 44 211
-car 252 181 155 193
-pedestrian 347 182 23 192

@@ -1,6 +1,0 @@
-greetrafficlight 685 39 14 335
-greetrafficlight 683 86 9 288
-greetrafficlight 750 99 9 275
-person 949 124 11 250
-person 976 107 18 267
-person 750 133 8 241

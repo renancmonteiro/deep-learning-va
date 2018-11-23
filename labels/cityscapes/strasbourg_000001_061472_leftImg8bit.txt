@@ -1,7 +1,0 @@
-person 440 59 69 315
-person 1045 0 149 309
-person 762 75 53 299
-person 693 113 14 261
-person 699 112 33 262
-person 877 100 29 274
-person 658 91 45 283

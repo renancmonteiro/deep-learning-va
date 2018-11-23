@@ -1,2 +1,0 @@
-pedestrian 934 153 91 221
-pedestrian 827 181 68 193

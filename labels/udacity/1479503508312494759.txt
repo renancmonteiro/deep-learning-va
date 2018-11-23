@@ -1,5 +1,0 @@
-Car 237 82 319 292
-Truck 503 104 56 270
-Pedestrian 684 58 127 316
-Pedestrian 808 101 57 273
-Pedestrian 863 94 47 280

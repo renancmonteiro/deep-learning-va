@@ -1,3 +1,0 @@
-pedestrian 704 121 94 253
-pedestrian 796 147 85 227
-pedestrian 957 153 72 221

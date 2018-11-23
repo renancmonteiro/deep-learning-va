@@ -1,6 +1,0 @@
-Car 552 118 460 256
-Car 205 171 67 203
-Car 256 172 44 202
-Truck 320 135 62 239
-redtrafficlight 591 60 19 314
-redtrafficlight 791 74 15 300

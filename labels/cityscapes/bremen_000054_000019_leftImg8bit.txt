@@ -1,7 +1,0 @@
-person 680 119 9 255
-person 721 119 11 255
-person 707 120 11 254
-person 1091 111 39 263
-person 696 123 8 251
-person 631 94 40 280
-person 868 86 64 288

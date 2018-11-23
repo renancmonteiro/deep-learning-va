@@ -1,4 +1,0 @@
-redtrafficlight 670 139 12 235
-car 802 148 74 226
-car 563 159 24 215
-pedestrian 639 156 5 218

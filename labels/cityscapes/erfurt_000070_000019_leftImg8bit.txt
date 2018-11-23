@@ -1,5 +1,0 @@
-person 869 140 8 234
-person 783 137 8 237
-person 742 132 10 242
-person 501 94 43 280
-person 417 78 49 296

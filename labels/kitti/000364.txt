@@ -1,3 +1,0 @@
-pedestrian 809 169 39 205
-pedestrian 750 179 30 195
-person_sitting 1207 214 63 160

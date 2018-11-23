@@ -1,9 +1,0 @@
-cyclist 907 135 69 239
-pedestrian 1065 142 120 232
-cyclist 647 158 59 216
-pedestrian 758 147 32 227
-pedestrian 800 152 20 222
-pedestrian 752 149 21 225
-pedestrian 706 149 29 225
-pedestrian 728 145 24 229
-van 621 155 17 219

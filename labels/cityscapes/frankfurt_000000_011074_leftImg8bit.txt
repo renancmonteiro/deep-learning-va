@@ -1,6 +1,0 @@
-person 512 71 41 303
-person 532 40 77 334
-person 608 36 90 338
-person 451 65 65 309
-person 364 75 68 299
-motorbike 406 99 59 275

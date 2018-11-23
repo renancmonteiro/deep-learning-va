@@ -1,2 +1,0 @@
-cyclist 722 159 63 215
-pedestrian 472 162 33 212

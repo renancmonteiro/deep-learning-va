@@ -1,7 +1,0 @@
-car 582 182 93 192
-van 418 174 78 200
-pedestrian 937 169 32 205
-pedestrian 1007 175 25 199
-pedestrian 1181 159 21 215
-pedestrian 1084 170 13 204
-car 0 199 52 175

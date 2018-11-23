@@ -1,8 +1,0 @@
-person 593 54 21 320
-person 615 60 13 314
-person 622 62 16 312
-person 591 73 13 301
-person 790 60 8 314
-person 803 69 22 305
-person 838 65 27 309
-car 742 59 58 315

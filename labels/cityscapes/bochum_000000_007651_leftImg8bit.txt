@@ -1,5 +1,0 @@
-offtrafficlight 408 -111 31 486
-offtrafficlight 344 -114 62 489
-person 711 110 6 264
-person 959 93 17 281
-person 950 101 6 273

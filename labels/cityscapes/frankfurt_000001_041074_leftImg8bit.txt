@@ -1,7 +1,0 @@
-person 377 120 6 254
-person 1034 57 42 317
-person 849 73 34 301
-traffic_light 611 15 6 359
-traffic_light 0 -58 6 433
-car 167 127 62 247
-bus 31 109 124 265

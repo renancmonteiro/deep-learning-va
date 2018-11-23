@@ -1,5 +1,0 @@
-person 442 134 8 240
-person 848 95 19 279
-person 863 88 19 286
-person 909 81 40 293
-person 586 129 9 245

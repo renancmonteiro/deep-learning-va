@@ -1,8 +1,0 @@
-person 571 130 5 244
-person 550 131 9 243
-person 843 125 11 249
-person 857 129 15 245
-person 952 114 28 260
-person 235 143 5 231
-person 117 138 14 236
-person 160 137 13 237

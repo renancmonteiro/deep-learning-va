@@ -1,3 +1,0 @@
-car 627 161 37 213
-pedestrian 578 161 24 213
-pedestrian 561 165 21 209

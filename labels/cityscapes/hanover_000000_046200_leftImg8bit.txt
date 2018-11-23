@@ -1,9 +1,0 @@
-person 591 38 47 336
-person 692 26 66 348
-person 821 52 44 322
-car 0 90 46 284
-bicycle 360 130 267 244
-bicycle 655 137 136 237
-bicycle 590 115 121 259
-bicycle 512 133 136 241
-truck 3 71 301 303

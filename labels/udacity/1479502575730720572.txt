@@ -1,8 +1,0 @@
-Car 548 135 152 239
-Car 706 145 49 229
-Car 463 155 70 219
-Car 99 125 283 249
-Car 51 161 76 213
-Truck 765 2 506 373
-redtrafficlight 755 133 5 241
-redtrafficlight 740 143 7 231

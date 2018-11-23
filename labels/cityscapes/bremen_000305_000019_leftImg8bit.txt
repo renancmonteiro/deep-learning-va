@@ -1,7 +1,0 @@
-person 522 135 7 239
-person 783 115 24 259
-person 826 98 34 276
-person 871 102 29 272
-person 972 76 37 298
-person 911 93 38 281
-person 991 84 45 290

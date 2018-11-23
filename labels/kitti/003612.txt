@@ -1,4 +1,0 @@
-offtrafficlight 709 141 5 233
-offtrafficlight 735 129 7 245
-offtrafficlight 737 134 5 240
-car 729 174 18 200

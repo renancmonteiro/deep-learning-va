@@ -1,9 +1,0 @@
-van 345 129 172 245
-cyclist 682 166 41 208
-pedestrian 1217 153 53 221
-pedestrian 1041 156 43 218
-person_sitting 915 179 73 195
-person_sitting 892 180 72 194
-pedestrian 205 154 31 220
-pedestrian 217 166 38 208
-car 279 178 110 196

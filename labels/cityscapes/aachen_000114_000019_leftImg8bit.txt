@@ -1,7 +1,0 @@
-person 936 74 44 300
-person 1185 53 84 321
-person 86 0 147 375
-person 208 14 155 360
-person 598 35 133 339
-person 550 35 126 339
-person 484 17 135 357

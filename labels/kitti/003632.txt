@@ -1,8 +1,0 @@
-van 851 108 415 266
-tram 363 134 206 240
-person_sitting 391 194 78 180
-person_sitting 332 194 81 180
-person_sitting 379 194 61 180
-person_sitting 427 187 46 187
-pedestrian 192 158 60 216
-pedestrian 193 156 67 218

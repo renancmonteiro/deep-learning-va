@@ -1,8 +1,0 @@
-Car 522 140 241 234
-Car 1 9 398 365
-Car 336 136 111 238
-Car 378 124 131 250
-Car 482 146 45 228
-redtrafficlight 379 72 14 302
-greetrafficlight 700 70 21 304
-redtrafficlight 700 70 21 304
