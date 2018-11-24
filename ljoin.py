@@ -16,6 +16,12 @@ def merge_duplis(duplis, sourceA, sourceB, destination):
 
 
 def main(sourceA, sourceB, destination):
+  if not sourceA.endswith('/'):
+    sourceA += '/'
+  if not sourceB.endswith('/'):
+    sourceB += '/'
+  if not destination.endswith('/'):
+    destination += '/'
 
   a = set()
   b = set()
