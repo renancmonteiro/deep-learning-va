@@ -140,20 +140,21 @@ def fromu(source, destination, imgWidth, imgHeight, dataset = 'crowdai', _nw = 1
       y = _y
       w = _w
       h = _h
+      fstr = ''
+      if not (img in imgs):
+        imgs[img] = []
       if imgWidth != _nw or imgHeight != _nh:
         x, y, w, h = crop_scale(_x, _y, _w, _h, imgWidth, imgHeight, nw = _nw, nh = _nh)
       if 4 < w and 4 < h:
         if 'pedestrian' == label:
           label = 'person'
         fstr = label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h)
-        if img in imgs:
-          imgs[img].append(fstr)
-        else:
-          imgs[img] = [fstr]
+        imgs[img].append(fstr)
   for img in imgs:
     with open(destination + img.replace('.jpg', '.txt'), 'w') as g:
       for s in imgs[img]:
-        g.write(s + '\n')
+        if 0 < len(s):
+          g.write(s + '\n')
 
 # convert from the IARA traffic light annotation format (separated files for each class)
 def fromi(source, destination, imgWidth, imgHeight, _nw = 1242, _nh = 375):
@@ -178,7 +179,7 @@ def fromi(source, destination, imgWidth, imgHeight, _nw = 1242, _nh = 375):
             else:
               imgs[img] = [fstr]
   for img in imgs:
-    with open(destination + img.replace('.jpg', '.txt'), w) as g:
+    with open(destination + img.replace('.png', '.txt'), 'w') as g:
       for s in imgs[img]:
         g.write(s + '\n')
 
@@ -196,6 +197,8 @@ def main(source, destination, dataset, imgWidth, imgHeight):
     fromk(source, destination, imgWidth, imgHeight)
   elif 'iara' == dataset:
     fromi(source, destination, imgWidth, imgHeight)
+  else:
+    print("Invalid dataset name!\n")
 
 if __name__ == "__main__":
   if 5 < len(sys.argv):
