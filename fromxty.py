@@ -83,6 +83,8 @@ def fromcs(source, destination, imgW, imgH, nw = 1242, nh = 375):
 
 # convert from kitti to yolo format
 def fromk(source, destination, imgW, imgH, _nw = 1242, _nh = 375):
+  ignore = ['dontcare', 'misc', 'traffic_light', 'trafficlight']
+  persons = ['sitting_person', 'pedestrian', 'biker']
   for filename in os.listdir(source):
     if filename.endswith('.txt'):
       with open(source + filename) as f, open(destination + filename, 'w') as g:
@@ -90,9 +92,12 @@ def fromk(source, destination, imgW, imgH, _nw = 1242, _nh = 375):
           ss = l.split(' ')
           label = ss[0].lower()
 
-          if 'dontcare' != label:
+          if not (label in ignore):
             if label == 'greetrafficlight':
               label = 'greentrafficlight'
+            elif label in persons:
+              label = 'person'
+            
             _x1 = int(ss[4].split('.')[0])
             _y1 = int(ss[5].split('.')[0])
             _x2 = int(ss[6].split('.')[0])
