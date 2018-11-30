@@ -3,6 +3,13 @@ import sys
 import json
 import math
 
+persons = ['sitting_person', 'pedestrian', 'biker', 'rider']
+ignore = ['ignore', 'dontcare', 'misc', 'traffic_light', 'trafficlight']
+labels = {"person": 0, "bicycle": 1, "car": 2, "motorbike": 3, "bus": 4, "truck": 5, "greentrafficlight": 6, "redtrafficlight": 7, "offtrafficlight": 8 }
+
+def get_label(l):
+  return labels.get(l)
+
 def crop_scale(x, y, w, h, imgW, imgH, nw = 1242, nh=375):
   if imgW != nw:
     wpercent = (nw / float(imgW))
@@ -44,6 +51,22 @@ def crop_scale(x, y, w, h, imgW, imgH, nw = 1242, nh=375):
   h = dh * h;
 
   return [x, y, w, h]
+
+def save_anotation(g, label, x, y, w, h):  
+  if not (label in ignore):
+    if label == 'greetrafficlight':
+      label = 'greentrafficlight'
+    elif label in persons:
+      label = 'person'
+    elif label == 'yellowtrafficlight':
+      label = 'redtrafficlight'
+    elif label == 'tram':
+      label = 'bus'
+
+    number = get_label(label)
+    if number is not None:
+      g.write('%d %f %f %f %f\n' % (number, x, y, w, h))
+
 
 def get_udacity_values(sl, dataset):
   img = ''
@@ -89,12 +112,10 @@ def fromcs(source, destination, imgW, imgH, nw = 1242, nh = 375):
           if 'ignore' != obj.get('label') and 2 < _w and 2 < _h:
             x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw, nh)
             if 0 < w and 0 < h:
-              g.write('person %f %f %f %f\n' % (x, y, w, h))
+              save_anotation(g, 'person', x, y, w, h)
 
 # convert from kitti to yolo format
 def fromk(source, destination, imgW, imgH, _nw = 1242, _nh = 375):
-  ignore = ['dontcare', 'misc', 'traffic_light', 'trafficlight']
-  persons = ['sitting_person', 'pedestrian', 'biker']
   for filename in os.listdir(source):
     if filename.endswith('.txt'):
       with open(source + filename) as f, open(destination + filename, 'w') as g:
@@ -103,29 +124,21 @@ def fromk(source, destination, imgW, imgH, _nw = 1242, _nh = 375):
           label = ss[0].lower()
 
           if not (label in ignore):
-            if label == 'greetrafficlight':
-              label = 'greentrafficlight'
-            elif label in persons:
-              label = 'person'
-            
             _x1 = int(ss[4].split('.')[0])
             _y1 = int(ss[5].split('.')[0])
             _x2 = int(ss[6].split('.')[0])
             _y2 = int(ss[7].split('.')[0])
-
             _x = min(_x1, _x2)
             _y = min(_y1, _y2)
             _w = max(_x1, _x2) - _x
             _h = max(_y1, _y2) - _y
-
             x = _x
             y = _y
             w = _w
             h = _h
-
             x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw = _nw, nh = _nh)
             if 0 < w and 0 < h:
-              g.write(label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h) + '\n')
+              save_anotation(g, label, x, y, w, h)
 
 # convert from udacity to yolo format
 def fromu(source, destination, imgWidth, imgHeight, dataset = 'crowdai', _nw = 1242, _nh = 375):
@@ -160,15 +173,14 @@ def fromu(source, destination, imgWidth, imgHeight, dataset = 'crowdai', _nw = 1
       if imgWidth != _nw or imgHeight != _nh:
         x, y, w, h = crop_scale(_x, _y, _w, _h, imgWidth, imgHeight, nw = _nw, nh = _nh)
       if 0 < w and 0 < h:
-        if 'pedestrian' == label:
-          label = 'person'
         fstr = label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h)
         imgs[img].append(fstr)
   for img in imgs:
     with open(destination + img.replace('.jpg', '.txt'), 'w') as g:
       for s in imgs[img]:
         if 0 < len(s):
-          g.write(s + '\n')
+          ss = s.split(' ')
+          save_anotation(g, ss[0], float(ss[1]), float(ss[2]), float(ss[3]), float(ss[4]))
 
 # convert from the IARA traffic light annotation format (separated files for each class)
 def fromi(source, destination, imgWidth, imgHeight, _nw = 1242, _nh = 375):
@@ -195,7 +207,8 @@ def fromi(source, destination, imgWidth, imgHeight, _nw = 1242, _nh = 375):
   for img in imgs:
     with open(destination + img.replace('.png', '.txt'), 'w') as g:
       for s in imgs[img]:
-        g.write(s + '\n')
+        ss = s.split(' ')
+        save_anotation(g, ss[0], float(ss[1]), float(ss[2]), float(ss[3]), float(ss[4]))
 
 def main(source, destination, dataset, imgWidth, imgHeight):
   if not source.endswith('/'):
