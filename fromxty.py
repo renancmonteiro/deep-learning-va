@@ -32,8 +32,18 @@ def crop_scale(x, y, w, h, imgW, imgH, nw = 1242, nh=375):
       h = erow - y
     y = y - srow
   else:
-    x = y = w = h = 0
-  return [int(x), int(y), int(w), int(h)]
+    return [0.0, 0.0, 0.0, 0.0]
+
+  dw = 1.0 / nw;
+  dh = 1.0 / nh;
+
+  # get the center of the bounding box
+  x = dw * (x + w / 2);
+  y = dh * (y + h / 2);
+  w = dw * w;
+  h = dh * h;
+
+  return [x, y, w, h]
 
 def get_udacity_values(sl, dataset):
   img = ''
@@ -78,8 +88,8 @@ def fromcs(source, destination, imgW, imgH, nw = 1242, nh = 375):
           _x, _y, _w, _h = obj.get('bboxVis')
           if 'ignore' != obj.get('label') and 2 < _w and 2 < _h:
             x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw, nh)
-            if 6 < w and 6 < h:
-              g.write('person %d %d %d %d\n' % (x, y, w, h))
+            if 0 < w and 0 < h:
+              g.write('person %f %f %f %f\n' % (x, y, w, h))
 
 # convert from kitti to yolo format
 def fromk(source, destination, imgW, imgH, _nw = 1242, _nh = 375):
@@ -113,9 +123,8 @@ def fromk(source, destination, imgW, imgH, _nw = 1242, _nh = 375):
             w = _w
             h = _h
 
-            if _nh != imgH or _nw != imgW:
-              x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw = _nw, nh = _nh)
-            if 4 < w and 4 < h:
+            x, y, w, h = crop_scale(_x, _y, _w, _h, imgW, imgH, nw = _nw, nh = _nh)
+            if 0 < w and 0 < h:
               g.write(label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h) + '\n')
 
 # convert from udacity to yolo format
@@ -150,7 +159,7 @@ def fromu(source, destination, imgWidth, imgHeight, dataset = 'crowdai', _nw = 1
         imgs[img] = []
       if imgWidth != _nw or imgHeight != _nh:
         x, y, w, h = crop_scale(_x, _y, _w, _h, imgWidth, imgHeight, nw = _nw, nh = _nh)
-      if 4 < w and 4 < h:
+      if 0 < w and 0 < h:
         if 'pedestrian' == label:
           label = 'person'
         fstr = label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h)
@@ -177,7 +186,7 @@ def fromi(source, destination, imgWidth, imgHeight, _nw = 1242, _nh = 375):
           _h = int(sl[4]) - _y
 
           x, y, w, h = crop_scale(_x, _y, _w, _h, imgWidth, imgHeight, _nw, _nh)
-          if 4 < w and 4 < h:
+          if 0 < w and 0 < h:
             fstr = label + ' ' + str(x) + ' ' + str(y) + ' ' + str(w) + ' ' + str(h)
             if img in imgs:
               imgs[img].append(fstr)
