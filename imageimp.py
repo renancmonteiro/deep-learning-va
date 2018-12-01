@@ -20,12 +20,14 @@ def main(source, destination):
     source += '/'
   if not destination.endswith('/'):
     destination += '/'
-  with open('smaller.txt', 'w') as h:
+  with open('smaller.txt', 'w') as h, open('greater.txt', 'w') as i:
     for filename in os.listdir(source):
       if filename.endswith(".jpg") or filename.endswith(".png") or filename.endswith(".tiff"):
         img = Image.open(source + filename)
-        if img.size[0] < 1242:
+        if 1242 > img.size[0]:
           h.write("%s: %d %d\n" % (filename, img.size[0], img.size[1]))
+        elif 1242 < img.size[0]:
+          i.write("%s: %d %d\n" % (filename, img.size[0], img.size[1]))
         nimg = cropscale_image(img, nw = 1242, nh = 375)
         nimg.save(destination + filename)
         nimg.close()
