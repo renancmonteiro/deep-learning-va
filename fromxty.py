@@ -10,6 +10,9 @@ labels = {"person": 0, "bicycle": 1, "car": 2, "motorbike": 3, "bus": 4, "truck"
 def get_label(l):
   return labels.get(l)
 
+def getIgnore():
+  return ignore
+
 def crop_scale(x, y, w, h, imgW, imgH, nw = 1242, nh=375):
   if imgW != nw:
     wpercent = (nw / float(imgW))
